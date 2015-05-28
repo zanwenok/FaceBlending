@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/save_all_step"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/save_step"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/btn_step_save"
+            android:onClick="onClick" />
+
+        <TextView
+            android:id="@+id/handle_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+        <Button
+            android:id="@+id/cancel_step"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/btn_step_cancel"
+            android:onClick="onClick" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/save_all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0" >
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:onClick="onClick"
+            android:text="@string/save" />
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:text="@string/cancel" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" 
+            android:id = "@+id/show_pic"
+            android:gravity="center">
+            
+
+          <!--   
+            <view class="com.buaa.faceblending.view.CropImageView"
+            android:layout_width="fill_parent" 
+            android:layout_height="fill_parent"
+            android:id="@+id/crop_image"
+            android:layout_gravity="center"
+            /> -->
+           
+            <!--
+                 <ImageView 
+                android:layout_width="fill_parent"
+                android:layout_height="	" 
+                android:id="@+id/source_image_noface"
+                android:src="@drawable/source_image_noface"
+                />
+            -->
+
+            <!-- <com.buaa.faceblending.view.BlendingView
+                android:id="@+id/image_blending"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                /> -->
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/blend"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/btn_blend"
+            android:onClick="onClick"
+            android:text="@string/blend" />
+
+        <Button
+            android:id="@+id/edit"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/btn_edit"
+            android:onClick="onClick"
+            android:text="@string/edit" />
+
+        <Button
+            android:id="@+id/tone"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/btn_color"
+            android:onClick="onClick"
+            android:text="@string/tone" />
+
+        <Button
+            android:id="@+id/frame"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/btn_frame"
+            android:onClick="onClick"
+            android:text="@string/frame" />
+    </LinearLayout>
+
+</LinearLayout>
